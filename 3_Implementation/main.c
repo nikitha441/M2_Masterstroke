@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	int PINB,PINB0,DDRB,DDB2,DDB3,DDB0,PORTB,PINB2,PINB3;
+	int PINB0,DDRB,DDB2,DDB3,PORTB,PINB2,PINB3;
 	{
 	DDRB |= (1 << DDB2)|(1<<DDB3);
 	DDRB &= ~(1 << DDB0);
