@@ -16,6 +16,12 @@ int main(void)
 		if (!(PINB&(1<<PINB0)))
 		{
 			PORTB ^= (1<<PINB2)^(1<<PINB3);
+		}
+		else
+		{
+			PORTB &= (~(1<<PINB2))&(~(1<<PINB3));
+		}
+		PORTB ^= (1<<PINB2)^(1<<PINB3);
 			_delay_ms(300);
 		}
 	}
