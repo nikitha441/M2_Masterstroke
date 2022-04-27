@@ -22,8 +22,8 @@ int main(void)
 			PORTB &= (~(1<<PINB2))&(~(1<<PINB3));
 		}
 		PORTB ^= (1<<PINB2)^(1<<PINB3);
-			_delay_ms(300);
-		}
+	}
+		_delay_ms(300);
 	}
 }
 
