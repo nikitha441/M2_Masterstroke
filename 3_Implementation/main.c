@@ -12,7 +12,6 @@ int main(void)
 
 	while (1)
 	{
-		
 		if (!(PINB&(1<<PINB0)))
 		{
 			PORTB ^= (1<<PINB2)^(1<<PINB3);
@@ -22,8 +21,8 @@ int main(void)
 			PORTB &= (~(1<<PINB2))&(~(1<<PINB3));
 		}
 		PORTB ^= (1<<PINB2)^(1<<PINB3);
-	}
 		_delay_ms(300);
 	}
 }
+
 
